@@ -1,1 +1,183 @@
 @import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap);
+
+body {
+	font-family: Lato;
+	/* background-color: rgb(251, 251, 251); */
+	background-color: tomato;
+}
+
+#title {
+	width: 80%;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+
+#title {
+	display: grid;
+	grid-template-columns: 0fr 1fr;
+	gap: 10px;
+	width: 90%;
+}
+
+#title p {
+	font-size: 28px;
+	font-weight: 200;
+	width: max-content;
+}
+
+#add-btn {
+	width: 45px;
+	height: 45px;
+	background-color: #ce3923;
+	border-radius: 200px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+#add-btn::before {
+	width: 45px;
+	height: 45px;
+	background: url('../assets/plus.svg');
+	display: block;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: '';
+	transform: scale(0.6);
+}
+
+#container {
+	/* width: 850px; */
+	width: 90%;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: white;
+	margin: auto;
+}
+
+#container-two {
+	/* width: 850px; */
+	width: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: white;
+	margin: 1px auto;
+}
+
+#table-box {
+	margin: 13px auto;
+	display: table;
+	width: 95%;
+}
+
+#table-row-header {
+	display: table-header-group;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.table-header {
+	display: table-cell;
+	padding: 20px 3px;
+	/* padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 1%; */
+	text-align: justify;
+}
+
+.table-header div {
+	font-weight: 700;
+	font-size: 16;
+}
+
+#table {
+	display: table-row-group;
+}
+
+#table-row {
+	display: table-row;
+	/* position: relative; */
+}
+
+#table-row div {
+	font-weight: 300;
+	font-size: 14px;
+}
+
+
+#table-row:hover {
+	background-color: rgba(115, 180, 255, 0.09);
+	cursor: pointer;
+}
+
+
+.trash {
+	/* 	display: none; */
+	visibility: hidden;
+	width: 30px;
+	height: 30px;
+	background-size: contain;
+	align-items: center;
+	background-position: center;
+	background-size: contain;
+	transform: scale(0.8);
+}
+
+.trash-img {
+	visibility: visible;
+	position: absolute;
+	top: 10%;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 20%;
+}
+
+#table-row:hover .trash {
+	visibility: visible;
+}
+
+.table-cell {
+	display: table-cell;
+	border-bottom: 1px solid rgb(204, 204, 204);
+	border-width: 1px;
+	position: relative;
+	padding: 20px 3px;
+	/* padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 1%; */
+}
+
+
+
+#user-img {
+	padding-right: 1%;
+	float: left;
+	height: 32px;
+	width: 32px;
+}
+
+.trash {
+	width: 18.09px;
+	height: 19.25px;
+}
+
+.trash-img .trash {
+    visibility: hidden;
+}
+
+.table-row:hover > .trash-img .trash {
+	visibility: visible;
+}
+
+#table-footer,
+#footer-content {
+	display: table-footer-group;
+	display: flex;
+}
+
+#footer-content img {
+	padding-left: 10%;
+	padding-right: 7%;
+	float: left;
+}
