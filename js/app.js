@@ -54,7 +54,7 @@ document.querySelectorAll('.add-btn').forEach((btn) =>
 
 		newUser.innerHTML = `
             <div class="table-cell" data-title="Team Member">
-                <img src="${randomUser.img}" alt="Team Member">
+                <img id="user-img" src="${randomUser.img}" alt="Team Member">
                 ${randomUser.name}
             </div>
             <div class="table-cell" data-title="Email">${randomUser.email}</div>
