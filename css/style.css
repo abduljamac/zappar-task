@@ -6,7 +6,7 @@ body {
 }
 
 #title {
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 	vertical-align: middle;
 }
@@ -21,7 +21,8 @@ body {
 #title p {
 	font-size: 28px;
 	font-weight: 200;
-	width: max-content;
+    width: max-content;
+    color: rgb(52, 75, 96);
 }
 
 #btn {
@@ -77,7 +78,11 @@ body {
 .table-header {
 	display: table-cell;
 	text-align: justify;
-	align-content: center;
+    align-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(52, 75, 96);
 }
 
 .table-header {
@@ -86,7 +91,7 @@ body {
 }
 
 #table-row-header .table-header:nth-child(1) {
-	width: 330px;
+	width: 350px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -135,10 +140,8 @@ body {
 .trash-img {
 	visibility: visible;
 	position: absolute;
-	top: 10%;
 	display: block;
 	position: absolute;
-	left: 0;
 	top: 20%;
 }
 
@@ -154,20 +157,21 @@ body {
 	line-height: 1.2;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	padding-left: 5px;
-	vertical-align: baseline;
+    padding-left: 5px;
+    color: rgb(52, 75, 96);
 }
 
 #user-img {
-	padding-right: 1%;
+	padding-right: 2%;
+	padding-bottom: 2%;
 	float: left;
 	height: 32px;
 	width: 32px;
 }
 
 .trash {
-	width: 18.09px;
-	height: 19.25px;
+	width: 19px;
+	height: 20px;
 	float: right;
 	margin-right: 5px;
 }
@@ -181,7 +185,7 @@ body {
 }
 
 #table-row .table-cell:nth-child(1) {
-	width: 330px;
+	width: 350px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
@@ -204,24 +208,45 @@ body {
 
 #table-footer p {
 	font-weight: 400;
-	color: #9b9b9b;
-    opacity: 50%;
-    font-size: 14px;
+	color: rgb(155, 155, 155);
+	font-size: 14px;
 }
 
 #footer-content img {
 	padding-left: 10%;
 	padding-right: 7%;
 	float: left;
+	width: 14px;
 }
 
 #footer-content p {
 	font-weight: 700;
-    color: #344b60;
-    font-size: 14px;
+	color: rgb(52, 75, 96);
+	font-size: 14px;
 }
 
 @media (max-width: 768px) {
+	#btn {
+		width: 25px;
+		height: 25px;
+		background-color: #ce3923;
+		border-radius: 100px;
+		cursor: pointer;
+		margin-top: 34px;
+	}
+
+	#btn::before {
+		width: 25px;
+		height: 25px;
+		background: url('../assets/plus.svg');
+		display: block;
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		content: '';
+		transform: scale(0.6);
+	}
+
 	.table-header {
 		font-weight: 700;
 		font-size: 7px;
@@ -233,23 +258,41 @@ body {
 	}
 
 	#user-img {
-		padding-right: 1%;
+		padding-right: 3%;
 		float: left;
 		height: 16px;
 		width: 16px;
-    }
-    
-    #table-footer p {
-        font-weight: 400;
-        color: #9b9b9b;
-        opacity: 50%;
-        font-size: 7px;
-    }
+	}
 
-    #footer-content p {
-        font-weight: 700;
-        color: #344b60;
-        font-size: 7px;
-    }
-    
+	.trash {
+		width: 9.5px;
+		height: 10px;
+		float: right;
+		margin-right: 5px;
+	}
+
+	#table-footer {
+		align-items: center;
+		flex-direction: row;
+	}
+
+	#table-footer p {
+		font-weight: 400;
+		color: #9b9b9b;
+		opacity: 50%;
+		font-size: 5px;
+	}
+
+	#footer-content img {
+		padding-left: 10%;
+		padding-right: 7%;
+		float: left;
+		width: 7px;
+	}
+
+	#footer-content p {
+		font-weight: 700;
+		color: #344b60;
+		font-size: 5px;
+	}
 }
