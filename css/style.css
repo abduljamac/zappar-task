@@ -2,8 +2,8 @@
 
 body {
 	font-family: Lato;
-	/* background-color: rgb(251, 251, 251); */
-	background-color: tomato;
+	background-color: rgb(251, 251, 251);
+	/* background-color: tomato; */
 }
 
 #title {
@@ -25,7 +25,7 @@ body {
 	width: max-content;
 }
 
-#add-btn {
+#btn {
 	width: 45px;
 	height: 45px;
 	background-color: #ce3923;
@@ -34,7 +34,7 @@ body {
 	margin-top: 20px;
 }
 
-#add-btn::before {
+#btn::before {
 	width: 45px;
 	height: 45px;
 	background: url('../assets/plus.svg');
@@ -62,6 +62,7 @@ body {
 	overflow: hidden;
 	background-color: white;
 	margin: 1px auto;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.045);
 }
 
 #table-box {
@@ -78,7 +79,7 @@ body {
 
 .table-header {
 	display: table-cell;
-	padding: 20px 3px;
+	/* padding: 20px 3px; */
 	/* padding-top: 2%;
 	padding-bottom: 2%;
 	padding-left: 1%; */
@@ -101,15 +102,15 @@ body {
 
 #table-row div {
 	font-weight: 300;
-	font-size: 14px;
+    font-size: 14px;
+    /* align-items: center; */
+    align-content: center;
 }
-
 
 #table-row:hover {
 	background-color: rgba(115, 180, 255, 0.09);
 	cursor: pointer;
 }
-
 
 .trash {
 	/* 	display: none; */
@@ -142,13 +143,11 @@ body {
 	border-bottom: 1px solid rgb(204, 204, 204);
 	border-width: 1px;
 	position: relative;
-	padding: 20px 3px;
+	/* padding: 20px 3px; */
 	/* padding-top: 2%;
 	padding-bottom: 2%;
 	padding-left: 1%; */
 }
-
-
 
 #user-img {
 	padding-right: 1%;
@@ -163,7 +162,7 @@ body {
 }
 
 .trash-img .trash {
-    visibility: hidden;
+	visibility: hidden;
 }
 
 .table-row:hover > .trash-img .trash {
