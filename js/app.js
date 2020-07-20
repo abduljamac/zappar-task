@@ -1,39 +1,45 @@
-let users = [
+const users = [
 	{
-		name: 'Erica Badu',
-		email: 'e.badu@example.com',
-		pemLevel: 'Owner',
-		img: '/assets/ Avatar / mini.svg',
-	},
-	{
-		name: 'Pat Nelsson',
-		email: 'p.nelsson@example.com',
-		pemLevel: 'Admin',
-		img: './assets/ Avatar / mini2.svg',
-	},
-	{
-		name: 'Pedding acceptance',
-		email: 'j.dog@example.com',
+		name: 'Jesse Clark',
+		email: 'j.clark@example.com',
 		pemLevel: 'Standard',
 		img: './assets/ Avatar / mini2.svg',
 	},
 	{
-		name: 'Amy Namy',
-		email: 'a.namy@example.com',
-		pemLevel: 'Standard',
-		img: './assets/ Avatar / mini.svg',
-	},
-	{
-		name: 'Victor D.',
-		email: 'v.d@example.com',
+		name: 'Javier King',
+		email: 'j.clark@example.com',
 		pemLevel: 'Standard',
 		img: './assets/ Avatar / mini2.svg',
 	},
 	{
-		name: 'Olly',
-		email: 'o.hunter@example.com',
+		name: 'Bernice Johnston',
+		email: 'b.johnston@example.com',
 		pemLevel: 'Standard',
-		img: './assets/ Avatar / mini3.svg',
+		img: './assets/ Avatar / mini2.svg',
+	},
+	{
+		name: 'Taylor Bennett',
+		email: 't.bennett@example.com',
+		pemLevel: 'Standard',
+		img: './assets/ Avatar / mini2.svg',
+	},
+	{
+		name: 'Nevaeh Evans',
+		email: 'n.evans@example.com',
+		pemLevel: 'Standard',
+		img: './assets/ Avatar / mini2.svg',
+	},
+	{
+		name: 'Walter Hughes',
+		email: 'w.hughes@example.com',
+		pemLevel: 'Standard',
+		img: './assets/ Avatar / mini2.svg',
+	},
+	{
+		name: 'Lee Gordon',
+		email: 'l.gordon@example.com',
+		pemLevel: 'Standard',
+		img: './assets/ Avatar / mini2.svg',
 	},
 ]
 
